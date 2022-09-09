@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "American Typewriter", sans-serif;
+}
+
+.page {
+    background: #000;
+    height: 100vh;
+}
+
+.form-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    margin: 0 auto;
+    max-width: 480px;
+    max-height: 536px;
+    background: #ffffff;
+    border: 1px solid #cfcfcf;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 40px;
+    font-family: "American Typewriter", sans-serif;
+}
+
+.form__title {
+    font-weight: bold;
+    font-size: 33px;
+    margin-bottom: 10px;
+}
+
+.form__fieldset {
+    margin-bottom: 30px;
+    border: none;
+}
+
+.form__label {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 12px;
+    margin-top: 32px;
+}
+
+.form__label[for="remember-me"] {
+    display: inline;
+    margin-left: 12px;
+    vertical-align: middle;
+    font-weight: 400;
+    color: #ff0000
+}
+
+.form__input {
+    background: #ffffff;
+    border: 1px solid #cfcfcf;
+    box-sizing: border-box;
+    padding: 24px;
+}
+
+.form__input[type="text"],
+.form__input[type="password"] {
+    border-radius: 30px;
+    min-width: 400px;
+    min-height: 60px;
+}
+
+.form__input::placeholder {
+    font-size: 16px;
+    color: #ff0000;
+
+}
+
+.form__input[type="checkbox"] {
+    border-radius: 4px;
+    min-width: 28px;
+    min-height: 28px;
+    vertical-align: middle;
+}
+
+.form__button[type="submit"] {
+    min-width: 117px;
+    min-height: 60px;
+    background: #000000;
+    border-radius: 100px;
+    color: #ff0000;
+    font-size: 18px;
+    border: none;
+}
+
+.form__button[type="reset"] {
+    border: none;
+    background: none;
+    color: #ff0000;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.form__input[type="text"]:focus,
+.form__input[type="password"]:focus {
+    outline-color: #ff0000;
+    outline-style: solid;
+    outline-width: 1px;
+    font-family: "American Typewriter", sans-serif;
+}
